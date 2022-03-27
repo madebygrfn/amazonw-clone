@@ -16,6 +16,7 @@ function Home() {
                 <img 
                 className="home__image"
                 src={banner}
+                alt=''
             />
 
             <div className="home__row">

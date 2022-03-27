@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import { useStateValue } from './StateProvider';
 
 function Header() {
+    // eslint-disable-next-line no-unused-vars
     const [{basket}, dispatch] = useStateValue();
 
 
@@ -15,7 +16,8 @@ function Header() {
         <Link to="/">
             <img
             className='header__logo'
-            src={logo} 
+            src={logo}
+            alt='' 
         />
         </Link>
 
@@ -27,10 +29,12 @@ function Header() {
         </div>
 
         <div className='header__nav'>
+            <Link to='/login'>
             <div className='header__option'>
                 <span className='header__optionLineOne'>Hello</span>
                 <span className='header__optionLineTwo'>Sign in</span>
             </div>
+            </Link>
             <div className='header__option'>
                 <span className='header__optionLineOne'>Returns</span>
                 <span className='header__optionLineTwo'>& Orders</span>
